@@ -1,0 +1,32 @@
+/*
+ *
+ * CSS Reset
+ *
+ */
+ * {
+ 	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+ }
+
+/*
+ *
+ * General Rules
+ *
+ */
+ nav.navbar {
+ 	height: 10%;
+ }
+
+ div#wrapper {
+ 	margin-top: 10%;
+ }
+
+ input#txtSearch {
+ 	border-radius: 25px;
+    width: 109px;
+ }
+ input#txtSearch:focus {
+ 	border-radius: 25px;
+    width: 209px;
+ }
