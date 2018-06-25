@@ -20,10 +20,6 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-		<a class="navbar-brand" href="#">
-			<!-- <img src="./assets/img/brand.jpg" class="img-fluid"> -->
-			Charvel
-		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -64,7 +60,7 @@
 
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Home
+						Components
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="#">Typography</a>
@@ -75,17 +71,24 @@
 						<!-- <div class="dropdown-divider"></div> -->
 					</div>
 				</li><!-- Components -->
+			</ul>
 
+		</div>
+		<a class="navbar-brand " href="#">
+			<!-- <img src="./assets/img/brand.jpg" class="img-fluid"> -->
+			Charvel
+		</a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
 			</ul>
 			<form class="form-inline my-2 my-lg-0">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">About</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Contact</a>
-					</li>
-				</ul>
+				
 				<input id="txtSearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 			</form>
 		</div>
@@ -207,33 +210,46 @@
 		</div><!-- /.Row 1 -->
 
 		<div class="row">
-			<div class="col-sm-12">
-				<form method="GET" action="">
-					<div class="jumbotron">
-						<h3>Subscribe</h3>
+			<div class="col-sm-12 plr">
+				<div class="jumbotron text-center">
+					<h3>Subscribe to our newsletter</h3>
+					<p>Join our monthly newsletter and never miss out on new stories and promotions.</p>
+					<form method="GET" action="" class="form-inline">
+
+						<div>
+							<!-- <input class="form-control" type="Email" placeholder="Email Address" name="Email1">
+								<input class="form-control btn btn-secondary" type="submit" name="Subscribe" value="SUBSCRIBE"> -->
+
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+									<div class="input-group-append">
+										<input class="form-control btn btn-secondary" type="submit" name="Subscribe" value="SUBSCRIBE">
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
-				</form>
+				</div>
+			</div><!-- Row 2 -->
+		</div><!-- .container -->
+
+		<footer class="container-fluid bg-secondary text-white">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p class="py-3">
+						Created by Efraim A. Lorenzana &copy; 2018
+					</p>
+				</div>
 			</div>
-		</div><!-- Row 2 -->
-	</div><!-- .container -->
+		</footer>
+		<!-- Imports Bootstrap Scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-	<footer class="container-fluid bg-secondary text-white">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<p class="py-3">
-					Created by Efraim A. Lorenzana &copy; 2018
-				</p>
-			</div>
-		</div>
-	</footer>
-	<!-- Imports Bootstrap Scripts -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
-	<!-- Import Custom Script -->
-	<script src="./assets/js/script.js"></script>
-</body>
-</html>
+		<!-- Import Custom Script -->
+		<script src="./assets/js/script.js"></script>
+	</body>
+	</html>

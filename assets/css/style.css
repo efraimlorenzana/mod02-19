@@ -14,7 +14,7 @@
  * General Rules
  *
  */
- nav.navbar {
+/* nav.navbar {
  	height: 10%;
  }
 
@@ -22,11 +22,68 @@
  	margin-top: 10%;
  }
 
+ ul.navbar {
+ 	background-color: #f8f9fa;
+ }*/
+
  input#txtSearch {
  	border-radius: 25px;
-    width: 109px;
+ 	width: 109px;
  }
  input#txtSearch:focus {
  	border-radius: 25px;
-    width: 209px;
+ 	width: 209px;
+ }
+
+ div#wrapper > div > div > div.jumbotron > p {
+ 	color: #928b8b;
+ }
+
+ div#wrapper > div > div > div.jumbotron > form > div {
+ 	text-align: center;
+ 	width: 40%;
+ 	margin:0 auto;
+ }
+ 
+
+ /*---------- Classes ----------*/
+
+ .plr {/* Remove Padding left and right of an Element*/
+ 	padding-left: 0;
+ 	padding-right: 0;
+ }
+
+/*
+ *
+ * Desktop media view
+ *
+ */
+ @media only screen and (min-width: 961px){
+ 	div#wrapper > div > div > div.jumbotron > form > div > input:first-child {
+ 		width: 33%;
+ 	}
+ }
+
+/*
+ *
+ * Mobile media view
+ *
+ */
+ @media only screen and (max-width: 400px){
+ 	div#wrapper > div > div > div.jumbotron > form > div {
+ 	text-align: center;
+ 	width: 100%;
+ }
+ }
+
+/*
+ *
+ * Bootstrap
+ *
+ */
+
+ .jumbotron {
+ 	margin-top: 4rem;
+ 	margin-bottom: 0rem;
+ 	border-radius: 0;
  }
